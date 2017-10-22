@@ -3,12 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+// Pages
+import { CompetidorCadastroComponent, CompetidorListagemComponent } from './pages'
+
+// Routes
+import { routing } from './app.routes'
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CompetidorListagemComponent,
+    CompetidorCadastroComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
